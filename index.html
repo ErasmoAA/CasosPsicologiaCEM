@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casos Psicologia CEM</title>
+</head>
+<body>
+  <button id="sign-in">Sign in with Google</button>
+
+  <form id="case-form">
+    <h2>Register Case</h2>
+    <input type="text" id="clientName" placeholder="Client Name" required />
+    <input type="email" id="clientEmail" placeholder="Client Email" required />
+    <textarea id="caseDescription" placeholder="Case Description" required></textarea>
+    <select id="template">
+      <option value="default">Default Template</option>
+    </select>
+    <button type="submit">Register Case</button>
+  </form>
+
+  <pre id="status"></pre>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
